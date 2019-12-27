@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "noLib": true,
+    "outDir": "dist",
+    "target": "es5",
+    "sourceRoot": "src",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": ["src/**/*.ts"]
+}
