@@ -305,13 +305,13 @@ function getPropertyBaseOrThrow(
 }
 
 function getPropertyOrThrow(group: PropertyBase, propertyName: string, config: Partial<Property> = {}): Property {
-  const potential = getPropertyBaseOrThrow(group, propertyName, config);
-  if (!(potential instanceof Property)) {
+  const property = getPropertyBaseOrThrow(group, propertyName, config);
+  if (!(property instanceof Property)) {
     throw new Error(`"${propertyName}" is not a Property`);
   }
-  return potential;
+  return property;
 }
 
-function importFile<T>(path: string): T {
-  return $.evalFile(new File(`./${path}.js`));
+function importFile<T>(name: string): T {
+  return $.evalFile(new File(`./${name}.js`));
 }
