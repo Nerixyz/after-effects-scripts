@@ -14,7 +14,7 @@
     "types-for-adobe": "^1.5.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.1",
     "typescript": "^3.8.3"
   }
 }
